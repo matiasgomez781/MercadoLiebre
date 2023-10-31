@@ -1,0 +1,74 @@
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+ul{
+    list-style:none
+}
+p {
+    font-size: 12px;
+}
+.search__bar {
+    margin-left: 5%;
+}
+.icon__search{
+    margin-left: 5%;
+}
+.fa-magnifying-glass{
+    background-color: white;
+}
+.payment__methods {
+    text-align: center;
+}
+.h2__headlines {
+    font-size: 24px;
+}
+.product__price {
+font-size: 18px;
+}
+.product__discount {
+font-size: 16px;
+}
+.product__description {
+font-size: 16px;
+font-weight: bold;
+}
+footer {
+    text-align: center;
+    background-color: white;
+}
+.burger-menu{
+    text-align: center;
+}
+.fa-bars{
+    background-color: #1259c3;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 24px;
+}
+.fa-credit-card{
+    color:#03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.fa-gift{
+    color:#03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.fa-user-shield{
+    color:#03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.h4__headlines{
+    font-weight: bold;
+}
+.product{
+    background-color: white;
+}
