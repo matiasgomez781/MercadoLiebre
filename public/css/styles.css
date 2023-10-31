@@ -5,6 +5,7 @@ header {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    display: block;
 }
 ul{
     list-style:none
