@@ -1,9 +1,12 @@
-header {
-    background-color: #EAC926;
+*{
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+header {
+    background-color: #EAC926;
+    padding: 8px;
+}
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 ul{
@@ -26,16 +29,17 @@ p {
 }
 .h2__headlines {
     font-size: 24px;
+    color: #666;
 }
 .product__price {
 font-size: 18px;
 }
 .product__discount {
 font-size: 16px;
+color: #39b54a;
 }
 .product__description {
 font-size: 16px;
-font-weight: bold;
 }
 footer {
     text-align: center;
@@ -66,9 +70,10 @@ footer {
     font-size: 2em;
     margin-bottom: 10px;
 }
-.h4__headlines{
+.footer__headlines{
     font-weight: bold;
+    color: #666;
 }
-.product{
+.card__product{
     background-color: white;
 }
