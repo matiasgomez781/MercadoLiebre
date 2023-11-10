@@ -8,9 +8,11 @@ header {
 }
 main{
    width: 90%;
+   margin: 0 auto;
 }
 body {
     background-color: #ebebeb;
+    margin: 0 auto;
 }
 ul{
     list-style:none
@@ -58,6 +60,17 @@ footer {
     padding: 8px;
     border-radius: 4px;
     font-size: 24px;
+}
+.fa-truck{
+    color:#39b54a;
+    padding: 8px;
+    border: 1px solid #39b54a;
+    border-radius: 100%;
+
+}
+.trucks{
+    display: flex;
+    justify-content: end;
 }
 .fa-credit-card{
     color:#03264C;
