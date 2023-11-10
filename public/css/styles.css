@@ -4,7 +4,10 @@
 }
 header {
     background-color: #EAC926;
-    padding: 8px;
+    padding-bottom: 15px;
+}
+main{
+   width: 90%;
 }
 body {
     background-color: #ebebeb;
@@ -40,6 +43,7 @@ color: #39b54a;
 }
 .product__description {
 font-size: 16px;
+display: none;
 }
 footer {
     text-align: center;
@@ -76,4 +80,60 @@ footer {
 }
 .card__product{
     background-color: white;
+    margin: 10px;
+}
+.product-info{
+    border: 1px solid #ebebeb;
+    padding: 15px;
+
+}
+
+.nav__bar{
+    display: none;
+}
+
+.nav__login{
+    display: none;
+}
+
+/*Tablets*/
+@media (min-width: 361px){
+    .product__description{
+        display: block;
+    }
+    .card__product{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav__bar{
+        display: block;
+    }
+    .nav__login{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
+
+}
+
+/*Desktop*/
+@media (min-width: 769px){
+    .product__description{
+        display: block;
+    }
+    .card__product{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav__bar{
+        display: block;
+    }
+    
+    .nav__login{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
 }
