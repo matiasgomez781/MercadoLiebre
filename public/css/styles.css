@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 header {
     background-color: #EAC926;
@@ -42,9 +44,11 @@ font-size: 18px;
 .product__discount {
 font-size: 16px;
 color: #39b54a;
+margin-left: 15px;
 }
 .product__description {
 font-size: 16px;
+width: 100%;
 display: none;
 }
 footer {
@@ -63,14 +67,10 @@ footer {
 }
 .fa-truck{
     color:#39b54a;
-    padding: 8px;
+    /*padding: 8px;
     border: 1px solid #39b54a;
-    border-radius: 100%;
+    border-radius: 100%;*/
 
-}
-.trucks{
-    display: flex;
-    justify-content: end;
 }
 .fa-credit-card{
     color:#03264C;
@@ -95,16 +95,32 @@ footer {
     background-color: white;
     margin: 10px;
 }
-.product-info{
+
+.product-info{ /*contiene logo envio, precio, descuento y descripcion*/
     border: 1px solid #ebebeb;
     padding: 15px;
-
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
+.trucks{ /*Span que contiene el camioncito*/
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+    
 
 .nav__bar{
     display: none;
 }
-
 .nav__login{
     display: none;
 }
@@ -127,7 +143,6 @@ footer {
         display: none;
     }
     
-
 }
 
 /*Desktop*/
