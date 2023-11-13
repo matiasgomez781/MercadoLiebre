@@ -51,7 +51,10 @@
             <a href="/register">Crea tu cuenta</a
             ><i class="fa-regular fa-id-card"></i>
           </li>
-          <li><a href="/login">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+          <li>
+            <a href="/login">Ingresa</a
+            ><i class="fa-solid fa-right-to-bracket"></i>
+          </li>
           <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
       </nav>
@@ -62,86 +65,107 @@
 
     <!--MAIN-->
     <main>
-      <form action="/" method="POST">
-        Datos personales
-        <input
-          type="text"
-          name="nombre"
-          placeholder="Nombre y Apellido"
-          required
-        />
-        <span id="errorNombre" class="error-message"></span>
-        <input
-          type="text"
-          name="usuario"
-          placeholder="Nombre de usuari@"
-          required
-        />
-        <span id="errorNombreUsuario" class="error-message"></span>
+      <section class="forms__container">
+        <form action="/" method="POST">
+          <article class="forms-datos">
+            Datos personales
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre y Apellido"
+              required
+            />
+            <span id="errorNombre" class="error-message"></span>
+            <input
+              type="text"
+              name="usuario"
+              placeholder="Nombre de usuari@"
+              required
+            />
+            <span id="errorNombreUsuario" class="error-message"></span>
 
-        <input type="email" name="email" placeholder="Email" required />
-        <span id="errorEmail" class="error-message"></span>
-        Fecha de nacimiento
-        <input type="date" name="fecha" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <span id="errorEmail" class="error-message"></span>
+          </article>
 
-        <input type="text" name="domicilio" placeholder="Domicilio" required />
-        <span id="errorDomicilio" class="error-message"></span>
+          <article class="forms-fecha">
+            Fecha de nacimiento
+            <input type="date" name="fecha" required />
 
-        Perfil del usuario
-        <label for="text">
-          <input type="radio" name="perfil" value="comprar" />
-          Comprador
-        </label>
-        <label for="text">
-          <input type="radio" name="perfil" value="vender" />
-          Vendedor
-        </label>
+            <input
+              type="text"
+              name="domicilio"
+              placeholder="Domicilio"
+              required
+            />
+            <span id="errorDomicilio" class="error-message"></span>
+          </article>
 
-        Intereses
-        <label for="text">
-          <input type="checkbox" name="electro" value="electro" />
-          Electro
-        </label>
+          <article class="forms-perfil">
+            Perfil del usuario
+            <label for="text">
+              <input type="radio" name="perfil" value="comprar" />
+              Comprador
+            </label>
+            <label for="text">
+              <input type="radio" name="perfil" value="vender" />
+              Vendedor
+            </label>
+          </article>
+          <article class="forms-intereses">
+            Intereses
+            <label for="text">
+              <input type="checkbox" name="electro" value="electro" />
+              Electro
+            </label>
 
-        <label for="text">
-          <input type="checkbox" name="moda" value="moda" />
-          Moda
-        </label>
+            <label for="text">
+              <input type="checkbox" name="moda" value="moda" />
+              Moda
+            </label>
 
-        <label for="text">
-          <input type="checkbox" name="hogar" value="hogar" />
-          Hogar
-        </label>
+            <label for="text">
+              <input type="checkbox" name="hogar" value="hogar" />
+              Hogar
+            </label>
 
-        <label for="text">
-          <input type="checkbox" name="jugueteria" value="jugueteria" />
-          Juguetería
-        </label>
+            <label for="text">
+              <input type="checkbox" name="jugueteria" value="jugueteria" />
+              Juguetería
+            </label>
 
-        <label for="text">
-          <input type="checkbox" name="vidasana" value="vidasana" />
-          Vida sana
-        </label>
+            <label for="text">
+              <input type="checkbox" name="vidasana" value="vidasana" />
+              Vida sana
+            </label>
+          </article>
 
-        Foto de usuario
+          <article class="forms-foto">
+            Foto de usuario
 
-        <input type="file" name="fotousuario" />
+            <input type="file" name="fotousuario" />
+          </article>
 
-        <label for="text"
-          >Contraseña
-          <input type="password" name="password" />
-        </label>
+          <article class="forms-password">
+            <label for="text"
+              >Contraseña
+              <input type="password" name="password" />
+            </label>
 
-        <label for="text"
-          >Confirmar contraseña
-          <input type="password" name="password" />
-        </label>
+            <label for="text"
+              >Confirmar contraseña
+              <input type="password" name="password" />
+            </label>
+          </article>
 
-        <a href="/home">
-          <button type="submit" value="enviar">Enviar</button>
-        </a>
-        <button type="reset" value="borrar">Borrar</button>
-      </form>
+          <article class="forms-botones">
+            <a href="/home">
+              <button type="submit" value="enviar">Enviar</button>
+            </a>
+            <button type="reset" value="borrar">Borrar</button>
+          </article>
+        </form>
+      </section>
     </main>
     <footer>
       <i class="fa-solid fa-credit-card"></i>

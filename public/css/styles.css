@@ -23,9 +23,14 @@ p {
   width: 50%;
   text-align: center;
   display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 15px;
 }
 input#barra-busqueda {
     width: -webkit-fill-available;
+    border: none;
 }
 .logo-search-box {
   display: flex;
@@ -38,12 +43,16 @@ input#barra-busqueda {
 .icon__search {
   margin-left: 5%;
 }
+button.lupa {
+    border: none;
+}
 .fa-magnifying-glass {
   background-color: white;
 }
 .payment__methods {
   text-align: center;
   width: 30%;
+  margin-left: 15px;
 }
 .h2__headlines {
   font-size: 24px;
@@ -60,7 +69,7 @@ input#barra-busqueda {
 .product__discount {
   font-size: 16px;
   color: #39b54a;
-  margin-left: 15px;
+ /*margin-left: 15px;*/
   width: 30%;
 }
 .product__description {
