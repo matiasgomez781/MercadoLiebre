@@ -8,7 +8,7 @@ app.use(express.static("public"));
 
 let port = process.env.PORT || 3030;
 
-app.listen(port, () => console.log("Servidor corriendo en el puerto 3030"));
+app.listen(port, () => console.log("Servidor corriendo en el puerto " + port));
 
 /*app.listen(3030, () => console.log("Servidor iniciado"));*/
 
