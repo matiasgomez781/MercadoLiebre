@@ -70,16 +70,22 @@
           placeholder="Nombre y Apellido"
           required
         />
+        <span id="errorNombre" class="error-message"></span>
         <input
           type="text"
           name="usuario"
           placeholder="Nombre de usuari@"
           required
         />
+        <span id="errorNombreUsuario" class="error-message"></span>
+
         <input type="email" name="email" placeholder="Email" required />
+        <span id="errorEmail" class="error-message"></span>
         Fecha de nacimiento
         <input type="date" name="fecha" required />
+
         <input type="text" name="domicilio" placeholder="Domicilio" required />
+        <span id="errorDomicilio" class="error-message"></span>
 
         Perfil del usuario
         <label for="text">
