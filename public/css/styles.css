@@ -86,6 +86,9 @@ footer {
   text-align: center;
   background-color: white;
 }
+.footer__card{
+    margin: 20px;
+}
 .burger-menu {
   text-align: center;
 }
@@ -256,6 +259,10 @@ footer {
   }
   li {
     padding: 10px;
+  }
+  .box-footer{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
