@@ -22,10 +22,15 @@ p {
 .search__bar {
   width: 50%;
   text-align: center;
+  display: flex;
+}
+input#barra-busqueda {
+    width: -webkit-fill-available;
 }
 .logo-search-box {
   display: flex;
   align-items: center;
+  width: 70%;
 }
 .logoMeli {
   width: 50%;
@@ -38,6 +43,7 @@ p {
 }
 .payment__methods {
   text-align: center;
+  width: 30%;
 }
 .h2__headlines {
   font-size: 24px;

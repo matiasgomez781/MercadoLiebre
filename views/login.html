@@ -51,7 +51,7 @@
             <a href="/register">Crea tu cuenta</a
             ><i class="fa-regular fa-id-card"></i>
           </li>
-          <li>Ingresa <i class="fa-solid fa-right-to-bracket"></i></li>
+          <li><a href="/login">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
           <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
       </nav>
@@ -62,7 +62,27 @@
 
     <!--MAIN-->
     <main>
-aqui va el login
+      <form action="/" method="POST">
+        Iniciar sesion
+        <br />
+        Nombre de usuario
+
+        <input
+          type="text"
+          name="usuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+        Contraseña
+        <label for="text"
+          >Contraseña
+          <input type="password" name="password" placeholder="123456" required/>
+        </label>
+
+        <a href="/home">
+          <button type="submit" value="enviar">Enviar</button>
+        </a>
+      </form>
     </main>
     <footer>
       <i class="fa-solid fa-credit-card"></i>
