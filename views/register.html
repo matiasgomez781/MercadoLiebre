@@ -1,6 +1,3 @@
-
-    
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +47,10 @@
         </ul>
 
         <ul id="login">
-          <li><a href="/register">Crea tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+          <li>
+            <a href="/register">Crea tu cuenta</a
+            ><i class="fa-regular fa-id-card"></i>
+          </li>
           <li>Ingresa <i class="fa-solid fa-right-to-bracket"></i></li>
           <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
@@ -62,14 +62,80 @@
 
     <!--MAIN-->
     <main>
+      <form action="/" method="POST">
+        Datos personales
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre y Apellido"
+          required
+        />
+        <input
+          type="text"
+          name="usuario"
+          placeholder="Nombre de usuari@"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        Fecha de nacimiento
+        <input type="date" name="fecha" required />
+        <input type="text" name="domicilio" placeholder="Domicilio" required />
 
-        <form action="/" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre y Apellido">
-            <input type="text" name="usuario" placeholder="Nombre de usuari@">
-            <input type="email" name="email" placeholder="Email">
-    
-        </form>
-      
+        Perfil del usuario
+        <label for="text">
+          <input type="radio" name="perfil" value="comprar" />
+          Comprador
+        </label>
+        <label for="text">
+          <input type="radio" name="perfil" value="vender" />
+          Vendedor
+        </label>
+
+        Intereses
+        <label for="text">
+          <input type="checkbox" name="electro" value="electro" />
+          Electro
+        </label>
+
+        <label for="text">
+          <input type="checkbox" name="moda" value="moda" />
+          Moda
+        </label>
+
+        <label for="text">
+          <input type="checkbox" name="hogar" value="hogar" />
+          Hogar
+        </label>
+
+        <label for="text">
+          <input type="checkbox" name="jugueteria" value="jugueteria" />
+          Juguetería
+        </label>
+
+        <label for="text">
+          <input type="checkbox" name="vidasana" value="vidasana" />
+          Vida sana
+        </label>
+
+        Foto de usuario
+
+        <input type="file" name="fotousuario" />
+
+        <label for="text"
+          >Contraseña
+          <input type="password" name="password" />
+        </label>
+
+        <label for="text"
+          >Confirmar contraseña
+          <input type="password" name="password" />
+        </label>
+
+        <a href="/home">
+          <button type="submit" value="enviar">Enviar</button>
+        </a>
+        <button type="reset" value="borrar">Borrar</button>
+      </form>
     </main>
     <footer>
       <i class="fa-solid fa-credit-card"></i>

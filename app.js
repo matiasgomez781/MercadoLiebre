@@ -17,3 +17,8 @@ app.get("/", (req, res) => {
 app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/register.html"));
 });
+
+/*Post para formulario - Regresa al home*/
+app.post("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/home.html"));
+});
