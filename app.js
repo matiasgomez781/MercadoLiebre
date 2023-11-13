@@ -12,3 +12,8 @@ app.listen(3030, () => console.log("Servidor iniciado"));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/home.html"));
 });
+
+/*Ruta Registro*/
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/register.html"));
+});
