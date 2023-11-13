@@ -4,6 +4,10 @@
   margin: 0px;
   padding: 0px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 header {
   background-color: #eac926;
   padding-bottom: 15px;
@@ -229,4 +233,67 @@ footer {
   li {
     padding: 10px;
   }
+}
+
+/*CSS PARA REGISTRO*/
+
+.forms__container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form__registro{
+    width: 100%;
+}
+.form-titulos{
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.inputs-reg{
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.forms-datos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forms-perfil{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forms-intereses{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forms-foto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forms-password{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forms-botones{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.botones-reg-estilos{
+    background-color: #03264C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
 }

@@ -27,10 +27,14 @@
             src="images\logo-mercado-liebre.svg"
             alt="logo mercado liebre"
           />
+          
           <div class="search__bar">
-            <input type="text" placeholder="Buscar productos, marcas..." />
+            <input type="text" id="barra-busqueda" name="busqueda" placeholder="Buscar productos, marcas..." />
+            <button class="lupa">
             <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
           </div>
+
         </div>
         <div class="payment__methods">
           <i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin
@@ -47,10 +51,7 @@
         </ul>
 
         <ul id="login">
-          <li>
-            <a href="/register">Crea tu cuenta</a
-            ><i class="fa-regular fa-id-card"></i>
-          </li>
+          <li><a href="/register">Crea tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
           <li><a href="/login">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
           <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
@@ -62,27 +63,35 @@
 
     <!--MAIN-->
     <main>
-      <form action="/" method="POST">
-        Iniciar sesion
-        <br />
-        Nombre de usuario
+      <section class="forms__container">
+        <form class="form__registro" action="/" method="POST">
 
-        <input
-          type="text"
-          name="usuario"
-          placeholder="Nombre de usuario"
-          required
-        />
-        Contraseña
-        <label for="text"
-          >Contraseña
-          <input type="password" name="password" placeholder="123456" required/>
-        </label>
+          <article class="forms-datos">
+            <h2 class="form-titulos">Iniciar sesion</h2>
+            <input
+              type="text"
+              class="inputs-reg"
+              name="usuario"
+              placeholder="Nombre de usuario"
+              required
+            />
+            <label for="text">
+              <input
+                type="password"
+                class="inputs-reg"
+                name="password"
+                placeholder="Elegi tu contraseña"
+                required
+              />
+            </label>
+          </article>
 
-        <a href="/home">
-          <button type="submit" value="enviar">Enviar</button>
-        </a>
-      </form>
+          <article class="forms-botones">     
+            <a href="/home"></a><button type="submit" class="botones-reg-estilos" value="enviar">Enviar</button>
+        </article>
+
+        </form>
+      </section>
     </main>
     <footer>
       <i class="fa-solid fa-credit-card"></i>
