@@ -81,6 +81,7 @@ button.lupa {
   width: 100%;
   display: none;
 }
+
 footer {
   text-align: center;
   background-color: white;
@@ -102,16 +103,28 @@ footer {
   color: #03264c;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: all;
+}
+.fa-credit-card:hover{
+    color: #0022AA;
 }
 .fa-gift {
   color: #03264c;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: all;
+}
+.fa-gift:hover{
+    color: #0022AA;
 }
 .fa-user-shield {
   color: #03264c;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: all;
+}
+.fa-user-shield:hover{
+    color: #0022AA;
 }
 .footer__headlines {
   font-weight: bold;
@@ -120,6 +133,17 @@ footer {
 .card__product {
   background-color: white;
   margin: 10px;
+  transition: all;
+}
+.card__product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+.card__product:hover .product__description{
+    display: none;
+    transition: all;
+}
+.card__product:hover .product__description{
+    display: block;
 }
 
 .product-info {
@@ -296,4 +320,28 @@ footer {
     border-radius: 5px;
     width: 100%;
     margin-bottom: 20px;
+}
+
+/*CSS PARA LOGIN*/
+.form__login{
+    width:60%
+}.box-login{
+    width: 100%;
+}
+.form-login-titulos{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.botones-login-estilos{
+    background-color: #03264C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all;
+}
+.botones-login-estilos:hover{
+    background-color: #0022AA;
 }
